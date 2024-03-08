@@ -62,5 +62,18 @@ public class CustomListTest {
         Assertions.assertFalse(list.hasCity(city));
     }
 
+/**
+     * create a mocklist for my citylist
+     * check if the list is empty
+     * add a city to the list
+     * check if the list has 1 city */
+    @Test
+    public void countCitiesTest(){
+        list = MockCityList();
+        assertEquals(0, list.countCities());
+        list.addCity(new City("Estevan", "SK"));
+        assertEquals(1, list.countCities());
+    }
+
 
 }
