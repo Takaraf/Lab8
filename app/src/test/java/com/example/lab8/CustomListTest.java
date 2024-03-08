@@ -34,6 +34,10 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize + 1);
     }
 
+    /**
+     * create a mocklist for my citylist
+     * add a city to the list
+     * check if the city is in the list */
     @Test
     public void hasCityTest(){
         list = MockCityList();
