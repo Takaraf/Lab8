@@ -73,4 +73,12 @@ public class CustomList extends ArrayAdapter<City> {
     public void removeCity(City city) {
         cities.remove(city);
     }
+
+    /**
+     * this checks the size of the list
+     * @return
+     */
+    public int countCities() {
+        return cities.size();
+    }
 }
